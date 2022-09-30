@@ -1,0 +1,79 @@
+extends layout
+
+block link
+    link(rel="stylesheet", href="/stylesheets/chi_siamo.css")
+
+block content
+    .hero
+        .hero__background 
+            img(src="/images/background.jpg", alt="Background")
+        .hero__content.reveal
+            p.intro-text.mt-2 96 STUDIO
+            h1.big-text IL NOSTRO TEAM
+            a.button(href='#members') Scopri di più
+
+    .members.mt-1#members
+        .member.mt-3
+            .member_img.reveal
+                a(href="https://www.instagram.com/edodibenedetto.ph/")
+                    img(src='images/members/edoardo.jpg' alt='Edoardo Di Benedetto')
+            .member_content.reveal
+                h3.mid-text.mt-1.tw Edoardo Di Benedetto
+                h2.normal-text Fotografo
+                p.small-text.mt-1.tw Nato a Roma il 20 Novembre del 2000, sono attualmente uno studente di fotografia all'accademia R.U.F.A di Roma. Specializzato in fotografia paesaggistica e di tipo commerciale, mi occupo del settore amministrativo e organizzativo del gruppo.
+                a.button.mt-1(href='https://www.instagram.com/edodibenedetto.ph/') Instagram
+
+        .member.mt-3
+            .member_img.reveal
+                a(href="https://www.instagram.com/picbychriss/")
+                    img(src='images/members/christian.jpg' alt='Christian Tondo')
+            .member_content.reveal
+                h3.mid-text.mt-1.tw Christian Tondo
+                h2.normal-text Direttore della fotografia, Operatore
+                p.small-text.mt-1.tw Sono fissato con i film. Ne studio ogni aspetto e tutto ciò che imparo lo impiego nei miei lavori. “Ho imparato molto di più vedendo film che leggendo pesanti tomi sull’estetica del cinema. La migliore educazione a fare film è farne uno.” 
+                br
+                p.small-text.tw – Stanley Kubrick.
+                a.button.mt-1(href='https://www.instagram.com/picbychriss/') Instagram
+
+        .member.mt-3
+            .member_img.reveal
+                a(href="https://linktr.ee/tamerhayek")
+                    img(src='images/members/tamer.jpg' alt='Tamer Hayek')
+            .member_content.reveal
+                h3.mid-text.mt-1.tw Tamer Hayek
+                h2.normal-text Montatore Video, Programmatore
+                p.small-text.mt-1.tw Sono un appassionato di informatica, infatti studio Ingegneria Informatica. Di giorno scrivo codici su codici, mentre di notte sono l’editor video della 96. Grazie a questo team, composto dai miei più cari amici, ho la possibilità di portare avanti la mia passione. La creatività è la base di questo lavoro.
+                a.button.mt-1(href='https://linktr.ee/tamerhayek') Linktree
+
+        .member.mt-3
+            .member_img.reveal
+                a(href="https://www.instagram.com/_lettins/")
+                    img(src='images/members/lorenzo.jpg' alt='Lorenzo Lettini')
+            .member_content.reveal
+                h3.mid-text.mt-1.tw Lorenzo Lettini
+                h2.normal-text Compositore, Musicista
+                p.small-text.mt-1.tw Studente di Composizione Applicata alle immagini presso il Saint Louis College of Music di Roma. Ho 21 anni e la musica è la mia vita da 15. Dalla produzione inedita per voi Artisti fino al Film Scoring, passando dal DJing, all’orchestrazione e all’arrangiamento di qualsiasi genere musicale.
+                a.button.mt-1(href='https://www.instagram.com/_lettins/') Instagram
+
+        .member.mt-3
+            .member_img.reveal
+                a(href="https://www.instagram.com/hatched.by/")
+                    img(src='images/members/francesco.jpg' alt='Francesco Covato')
+            .member_content.reveal
+                h3.mid-text.mt-1.tw Francesco Covato
+                h2.normal-text Sceneggiatore, Scrittore
+                p.small-text.mt-1.tw Non credo sia giusto dire che il cinema è la mia passione Le emozioni sono la mia passione. Emozionarmi e fare emozionare le persone. Questa è la mia passione. E dal momento che il cinema è un modo per emozionare le persone allora si, forse il cinema è la mia passione.
+                a.button.mt-1(href='https://www.instagram.com/hatched.by/') Instagram
+
+
+        .esterni.mt-3
+            h1.mid-text.tw COLLABORATORI ESTERNI
+            .cards.clearfix
+                a.card_esterno.reveal(href="https://www.instagram.com/vinilicomecrepes/" style="background: black")
+                    .card_image_esterno.reveal()
+                        img(src="/images/members/esterni/giorgia_dramisino.png" alt="Giorgia Dramisino")
+                    .card_text_esterno.reveal
+                        h1.mid-text Giorgia Dramisino
+                        p.normal-text Fotografa
+
+

@@ -1,0 +1,77 @@
+doctype html
+html
+  head
+    title=title
+
+    meta(charset="UTF-8")
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+
+    link(rel='apple-touch-icon' sizes='180x180' href='/images/icon/apple-touch-icon.png')
+    link(rel='icon' type='image/png' sizes='32x32' href='/images/icon/favicon-32x32.png')
+    link(rel='icon' type='image/png' sizes='16x16' href='/images/icon/favicon-16x16.png')
+    link(rel='manifest' href='/images/icon/site.webmanifest')
+    meta(name='msapplication-TileColor' content='#da532c')
+    meta(name='theme-color' content='#ffffff')
+    link(rel='stylesheet' href='/stylesheets/layout.css')
+    block link
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css")
+  body
+    header.header
+      .header_logo
+        a(href="/")
+          img(src="/images/logo.png")
+      .header_nav
+        input.toggle-menu(type="checkbox")
+        .hamburger
+
+        ul.header_menu
+          li.header_menu_item
+            a(href="/") Home
+          li.header_menu_item
+            a(href="/chi-siamo") Chi Siamo
+          li.header_menu_item
+            a(href="/fotografia") Fotografia
+          li.header_menu_item
+            a(href="/videomaking") Videomaking
+          li.header_menu_item
+            a(href="/musica") Musica
+          li.header_menu_item
+            a(href="/produzioni-originali") Produzioni Originali
+          li.header_menu_item
+            a(href="/storie") Storie
+
+    block content
+
+
+    footer.mt-3
+      h3.small-text.tw 96 Studio Copyright 2021.
+      h3.small-text.tw Cellulare: +39 3661738407
+      h3.small-text.tw Per informazioni: info@96studio.it
+      h3.small-text.tw Hai un'idea da proporci? Contattaci a collaborazioni@96studio.it
+      .footer_logos
+        a(href="https://www.facebook.com/info.96studio")
+          img(src="/images/loghi/facebook.png")
+        a(href="https://www.instagram.com/96studio__/")
+          img(src="/images/loghi/instagram.png")
+        a(href="https://www.youtube.com/channel/UCpcZEoXpov7lRozWJL__IUA")
+          img(src="/images/loghi/youtube.png")
+
+      h3.small-text.tw.mt-1 Sito Web creato da Tamer Hayek
+
+    script(src="https://ajax.googleapis.com/ajax/libs/d3js/6.5.0/d3.min.js")
+    script(src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js")
+    script.
+      ScrollReveal().reveal('.reveal', {
+        distance: '100px',
+        duration: 1000,
+        easing: 'cubic-bezier(.215,.61,.355, 1)',
+        interval: 100
+      });
+      ScrollReveal().reveal('.zoom', {
+        duration: 1000,
+        easing: 'cubic-bezier(.215,.61,.355, 1)',
+        interval: 200,
+        scale: 0.65,
+        mobile: false
+      });

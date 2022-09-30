@@ -1,0 +1,81 @@
+extends layout
+
+block link
+    link(rel='stylesheet', href='/stylesheets/index.css')
+
+block content
+    .hero
+        .hero__background 
+            img(src="/images/background.jpg", alt="Background")
+        .hero__content.reveal
+            p.intro-text.reveal.mt-2 Fotografia, Videomaking, Musica
+            h1.big-text.reveal 96 STUDIO
+            a.button.reveal(href='#presentazione') Scopri di più
+
+    #presentazione.poster.mt-2
+        .poster__img.reveal
+            img(src='images/presentazione.jpg' alt='96 Team')
+        .poster__content.reveal
+            h3.mid-text.mt-1.tw CI PRESENTIAMO
+            p.normal-text.mt-1.tw 96 Studio è l’evoluzione di 96 Production.
+            p.normal-text.mt-1.tw Perché è questo che ci rappresenta meglio: una continua evoluzione.
+            p.normal-text.tw Nata per unire l’utile, il lavoro, al dilettevole, la passione coltivata in amicizia, la nostra società è stata in grado di farsi strada nel mondo della produzione cinematografica, fotografica e musicale partendo da poco più di qualche ragazzo con una macchina fotografica, un computer, una tastiera e una penna per scrivere.
+            p.normal-text.mt-1.tw 96 Studio si occupa di produzione video, foto, musica e servizi di social management, oltre che allo sviluppo e alla realizzazione di progetti personali come cortometraggi e progetti fotografici con i quali partecipiamo a concorsi e che esponiamo sulle nostre pagine social e sito internet.
+            a.button.mt-1(href='/chi-siamo') Il nostro team
+
+    .cards.clearfix.mt-3
+        a.card.reveal(href="/fotografia")
+            .card_image.reveal
+                img(src="images/homepage/fotografia.png" alt="Fotografia")
+            .card_text.reveal
+                h1.mid-text Fotografia
+        a.card.reveal(href="/videomaking" style="background: black")
+            .card_image.reveal
+                img(src="images/homepage/video.png" alt="Videomaking")
+            .card_text.reveal
+                h1.mid-text.tw Videomaking
+        a.card.reveal(href="/musica")
+            .card_image.reveal
+                img(src="images/homepage/musica.png" alt="Musica")
+            .card_text.reveal
+                h1.mid-text Musica
+        a.card.reveal(href="/produzioni-originali")
+            .card_image.reveal
+                img(src="images/homepage/originali.png" alt="Originali")
+            .card_text.reveal
+                h1.mid-text Originali 96
+        a.card.reveal(href="/storie")
+            .card_image.reveal
+                img(src="images/homepage/storie.png" alt="Storie")
+            .card_text.reveal
+                h1.mid-text Storie
+        a.card.reveal(href="https://www.instagram.com/96studio__/")
+            .card_image.reveal
+                img(src="images/homepage/instagram.png" alt="Instagram")
+            .card_text.reveal
+                h1.mid-text Instagram
+
+    #last-work.last_work
+        .last_content.reveal
+            h3.intro-text.tw Ultima Produzione
+            h2.mid-text.tw= video.titolo
+            a(href="/produzioni-originali/category?category=" + video.category)
+                p.small-text(style="color: gray")= video.category
+            a.button.mt-1(href='/produzioni-originali/work?titolo=' + video.titolo) Visualizza video
+        .last_video.reveal
+            iframe(width='420' height='315' src=video.embed allow='autoplay; fullscreen; picture-in-picture' allowfullscreen='')
+        .last_image
+            img(src=video.copertina, alt=video.titolo)
+    
+    #smartphone.bts_cards.clearfix 
+        .bts.mt-2.reveal
+            .bts_image.reveal
+                iframe(width='420' height='315' src=video.embed allow='autoplay; fullscreen; picture-in-picture' allowfullscreen='')
+            .card_text.reveal
+                h3.mid-text.tw= video.titolo
+                a(href=href="/produzioni-originali/category?category="+video.category)
+                    h2.small-text= video.category
+                p.small-text.tw.mt-1= video.contenuto
+                a.button.mt-1(href='/produzioni-originali/work?titolo=' + video.titolo) Visualizza video
+
+

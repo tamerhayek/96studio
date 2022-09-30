@@ -1,0 +1,45 @@
+/*====================
+Musica
+====================*/
+.music_layout {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  text-align: center;
+}
+.music_song {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.music_song p {
+  color: gray;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.music_song h5 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.music_song h3 {
+  text-transform: uppercase;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.music_song audio {
+  width: 70%;
+  margin: auto auto 50px;
+  border-radius: 10px;
+  color: #660000;
+}
+
+@media screen and (max-width: 768px) {
+  /*====================
+  Musica
+  ====================*/
+  .music_layout {
+    padding: 0;
+  }
+  .music_song audio {
+    width: 90%;
+  }
+}

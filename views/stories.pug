@@ -1,0 +1,29 @@
+extends layout
+
+block link
+    link(rel='stylesheet', href='/stylesheets/stories.css')
+    
+block content
+    .hero
+        .hero__background 
+            img(src="/images/background.jpg", alt="Background")
+        .hero__content.reveal
+            p.intro-text.mt-2 96 STUDIO
+            h1.big-text Storie
+            a.button(href='#presentazione') Scopri di più
+
+
+    .stories.mt-2#presentazione
+        for position in size
+            for story in stories
+                if position === story.position
+                    .story.mt-1
+                        .story_image
+                            a.image(href="/storie/text?titolo="+story.titolo)
+                                img(src=story.copertina, alt=story.titolo)
+                        .story_content 
+                            h1.mid-text.tw= story.titolo 
+                            a(href="/storie/category?category="+story.category)
+                                h2.normal-text= story.category 
+                            p.small-text.tw= story.trama 
+                            a.button(href="/storie/text?titolo="+story.titolo) Leggi

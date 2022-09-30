@@ -1,0 +1,172 @@
+/*====================
+Stories
+====================*/
+.stories {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 100px;
+}
+.story {
+  width: 100%;
+  display: flex;
+}
+.story_content {
+  width: 65%;
+  padding: 50px;
+}
+.story_content h1 {
+  font-weight: bold;
+  margin-top: 20px;
+}
+.story_content h2 {
+  color: gray;
+  margin-top: 20px;
+}
+.story_content p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.story_content h5 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.story_content a {
+  margin-top: 10px;
+}
+.story_image {
+  width: 35%;
+  height: auto;
+}
+.story_image img {
+  width: 100%;
+}
+.story_text {
+  width: 100%;
+  padding: 0 50px;
+  text-align: center;
+  line-height: 30px;
+}
+/*====================
+Cards
+====================*/
+.cards {
+  width: 90%;
+  margin: 40px auto;
+}
+.bts {
+  float: left;
+  width: 30%;
+  margin: 0 1.5%;
+  padding: 15px 15px;
+}
+.bts_image {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.bts_image img {
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+.bts_image iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+@media screen and (max-width: 1200px) {
+  /*====================
+  Stories
+  ====================*/
+  .stories {
+    margin-top: 20px;
+    padding: 0;
+  }
+  .story {
+    display: block;
+  }
+  .story_content {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  .story_content h1 {
+    font-size: 24px;
+  }
+  .story_content h2 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .story_content p {
+    font-size: 10px;
+  }
+  .story_content h5 {
+    display: none;
+  }
+  .story_content a {
+    margin-top: 10px;
+  }
+  .story_image {
+    width: 100%;
+    height: auto;
+  }
+  .story_image img {
+    width: 100%;
+  }
+  .story_text {
+    text-align: center;
+    padding: 20px;
+  }
+  /*====================
+  Cards
+  ====================*/
+  .bts_cards {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .bts {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .bts_image {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /*====================
+  Cards
+  ====================*/
+  .cards {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .bts {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+  }
+  .bts_image {
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .bts_image img {
+    width: 100%;
+  }
+  .bts_image iframe {
+    width: 100%;
+    height: 200px;
+  }
+}

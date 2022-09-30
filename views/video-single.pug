@@ -1,0 +1,40 @@
+extends layout
+
+block link
+    link(rel="stylesheet", href="/stylesheets/video.css")
+
+block content
+    .video_player
+        .video_player_content.reveal
+            iframe(width='420' height='315' src=video.embed allow='autoplay; fullscreen; picture-in-picture' allowfullscreen='')
+        .video_player_text.reveal
+            a(href=href="/videomaking/category?category="+video.category)
+                h2.small-text= video.category
+            a.titolo(href=video.url)
+                h1.mid-text.tw= video.titolo
+            p.small-text.tw= video.contenuto
+    
+    #smartphone.bts_cards.clearfix 
+        .bts.mt-2.reveal
+            .bts_image.reveal
+                iframe(width='420' height='315' src=video.embed allow='autoplay; fullscreen; picture-in-picture' allowfullscreen='')
+            .card_text.reveal
+                h3.mid-text.tw= video.titolo
+                a(href=href="/videomaking/category?category="+video.category)
+                    h2.small-text= video.category
+                p.small-text.tw.mt-1= video.contenuto
+    
+    .cards.clearfix.mt-1
+            for posizione in size
+                for video in videoBts
+                    if video.position === posizione
+                        .bts.reveal 
+                            .bts_image.reveal
+                                iframe(width='420' height='315' src=video.embed allow='autoplay; fullscreen; picture-in-picture' allowfullscreen='')
+            for posizione in size
+                for photo in photoBts
+                    if photo.position === posizione
+                        .bts.reveal
+                            .bts_image.reveal
+                                img(src=photo.copertina)
+

@@ -1,0 +1,54 @@
+extends layout
+
+block link
+    link(rel="stylesheet", href="/stylesheets/fotografia.css")
+
+block content
+    .hero
+        .hero__background 
+            img(src="/images/background.jpg", alt="Background")
+        .hero__content.reveal
+            p.intro-text.mt-2 Fotografia
+            h1.big-text PROGETTI
+            a.button(href='#photos') Scopri di più
+
+    #photos.photo-categories.mt-1
+        .photo-category
+            .photo-img.reveal
+                img(src="/images/fotografia/progetti/confini/cover.jpg" alt="Confini")
+            .photo-content.reveal
+                h3.mid-text.mt-1.tw C O N F I N I
+                p.small-text.mt-1 Confini è la narrazione visiva di un cammino che si svolge fuori e dentro il parco di Villa Ada, storica
+                p.small-text residenza situata nel cuore di Roma. Attraverso un percorso che parte dall’esterno, più precisamente in
+                p.small-text Via Salaria, e si addentra sempre più, sono poi uscito in uno dei tanti quartieri confinanti con la
+                p.small-text Villa: Parioli. Lo scopo del progetto è quello di far dialogare l’esterno con l’interno della Villa,
+                p.small-text mantenendoil focus sul concetto di “confine”. Ciò che mi ha colpito maggiormente e mi ha spinto a lavorare su
+                p.small-text questa idea in particolare è come, in un panorama prettamente urbano, possano convivere 160 ettari di
+                p.small-text natura, separati solamente da delle mura. Come si trattasse una città a se stante, Villa Ada convive con
+                p.small-text una realtà completamente opposta a cui per accervi basta solamente attravere una soglia.
+                br
+                p.small-text 1 Marzo 2021 - 5 Marzo 2021
+                a.button.mt-1(href='/fotografia/progetti/work?titolo=Confini') Visualizza altro
+
+    .photo-categories.mt-1
+        .photo-category
+            .photo-img.reveal
+                img(src="/images/fotografia/progetti/liutaio/01.jpg" alt="L'arte del Liutaio")
+            .photo-content.reveal
+                h3.mid-text.mt-1.tw L'arte del Liutaio
+                a.button.mt-1(href="/fotografia/progetti/work?titolo=Liutaio") Visualizza altro
+
+    .photo-categories.mt-1
+        .photo-category
+            .photo-img.reveal
+                img(src="/images/fotografia/progetti/urbs/001.jpg" alt="Urbs")
+            .photo-content.reveal
+                h3.mid-text.mt-1.tw U R B S
+                a.button.mt-1(href='/fotografia/progetti/work?titolo=Urbs') Visualizza altro
+    
+
+
+
+     
+
+    

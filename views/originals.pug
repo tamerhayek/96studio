@@ -1,0 +1,31 @@
+extends layout
+
+block link
+    link(rel="stylesheet", href="/stylesheets/video.css")
+
+block content
+    .hero
+        .hero__background 
+            img(src="/images/background.jpg", alt="Background")
+        .hero__content.reveal
+            p.intro-text.mt-2 96 STUDIO
+            h1.big-text Produzioni Originali
+            a.button(href='#videos') Scopri di più
+
+    #videos.categories_video
+        for posizione in size
+            for video in originals
+                if video.position === posizione
+                    .last_work.mt-1
+                        #no-smartphone.last_content.reveal
+                            h2.mid-text.tw= video.titolo
+                            a(href="/produzioni-originali/category?category=" + video.category)
+                                p.small-text(style="color: gray")= video.category
+                            a.button.mt-1(href="/produzioni-originali/work?titolo=" + video.titolo) Visualizza video
+                        .last_cover.reveal
+                            img(src=video.copertina, alt=video.titolo)
+                        #smartphone.last_content.reveal
+                            h2.mid-text.tw= video.titolo
+                            a(href="/produzioni-originali/category?category=" + video.category)
+                                p.small-text(style="color: gray")= video.category
+                            a.button.mt-1(href="/produzioni-originali/work?titolo=" + video.titolo) Visualizza video

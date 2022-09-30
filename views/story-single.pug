@@ -1,0 +1,41 @@
+extends layout
+
+block link
+    link(rel='stylesheet', href='/stylesheets/stories.css')
+    
+block content
+    .hero
+        .hero__background 
+            img(src="/images/background.jpg", alt="Background")
+        .hero__content.reveal
+            p.intro-text.mt-2 Storie
+            h1.big-text= story.titolo
+
+
+    .stories.mt-2
+        .story
+            .story_image
+                img(src=story.copertina, alt=story.titolo)
+            .story_content 
+                h1.mid-text.tw= story.titolo 
+                a(href="/storie/category?category="+story.category)
+                    h2.normal-text= story.category 
+                h5.small-text.tw= story.trama
+
+        .story_text.mt-1
+            h1.intro-text.tw TESTO
+            p.normal-text.tw= story.contenuto
+            
+        .cards.clearfix.mt-1
+            for posizione in size
+                for video in videoBts
+                    if video.position === posizione
+                        .bts.reveal 
+                            .bts_image.reveal
+                                iframe(width='420' height='315' src=video.embed allow='autoplay; fullscreen; picture-in-picture' allowfullscreen='')
+            for posizione in size
+                for photo in photoBts
+                    if photo.position === posizione
+                        .bts.reveal
+                            .bts_image.reveal
+                                img(src=photo.copertina)

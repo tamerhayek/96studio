@@ -1,0 +1,58 @@
+extends layout
+
+block link
+    link(rel="stylesheet", href="/stylesheets/fotografia.css")
+
+block content
+    .hero
+        .hero__background 
+            img(src="/images/background.jpg", alt="Background")
+        .hero__content.reveal
+            p.intro-text.mt-2 96 STUDIO
+            h1.big-text Fotografia
+            a.button(href='#photos') Scopri di più
+
+    #photos.photo-categories.mt-1
+        .photo-category
+            .photo-img.reveal
+                img(src="/images/fotografia/commercial/001.jpg" alt="Commercial")
+            .photo-content.reveal
+                h3.mid-text.mt-1.tw Commercial
+                a.button.mt-1(href='/fotografia/category?category=Commercial') Visualizza altro
+    .photo-categories.mt-1
+        .photo-category
+            .photo-img.reveal
+                img(src="/images/fotografia/food/001.jpg" alt="Food")
+            .photo-content.reveal
+                h3.mid-text.mt-1.tw Food
+                a.button.mt-1(href='/fotografia/category?category=Food') Visualizza altro
+
+    .photo-categories.mt-1
+        .photo-category
+            .photo-img.reveal
+                img(src="/images/fotografia/ritratti/001.jpg" alt="Ritratti")
+            .photo-content.reveal
+                h3.mid-text.mt-1.tw Ritratti
+                a.button.mt-1(href='/fotografia/category?category=Ritratti') Visualizza altro
+    
+    .photo-categories.mt-1
+        .photo-category
+            .photo-img.reveal
+                img(src="/images/fotografia/paesaggi/001.jpg" alt="Paesaggi")
+            .photo-content.reveal
+                h3.mid-text.mt-1.tw Paesaggi
+                a.button.mt-1(href='/fotografia/category?category=Paesaggi') Visualizza altro
+
+    .photo-categories.mt-1
+        .photo-category
+            .photo-img.reveal
+                img(src="/images/fotografia/progetti/liutaio/01.jpg" alt="Progetti")
+            .photo-content.reveal
+                h3.mid-text.mt-1.tw Progetti
+                a.button.mt-1(href='/fotografia/progetti') Visualizza altro
+
+
+
+     
+
+    

@@ -1,0 +1,28 @@
+extends layout
+
+block link
+    link(rel="stylesheet", href="/stylesheets/fotografia.css")
+
+block content
+    .slideshow-container
+        for position in size 
+            for foto in photos
+                if foto.position === position
+                    .slide.fade
+                        .number_text 
+                            h1.tw #{position} / #{length}
+                        img(src=foto.url)
+        a.prev(onclick="plusSlides(-1)") &#10094;
+        a.next(onclick="plusSlides(1)") &#10095;
+
+        br
+        br
+        .slides_dots(style="text-align: center")
+            for position in size 
+                for foto in photos
+                    if foto.position === position
+                        span.dot(onclick="currentSlide(#{position})")
+            
+        
+    script(src="/scripts/slider.js")
+                    

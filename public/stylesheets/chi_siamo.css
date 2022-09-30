@@ -1,0 +1,226 @@
+/*====================
+Cards
+====================*/
+.cards {
+  width: 90%;
+  margin: 40px auto;
+}
+.cards-text {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+.cards-text a p {
+  font-size: 15px;
+}
+.cards-text h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+.cards a {
+  text-decoration: none;
+}
+.card {
+  float: left;
+  width: 30%;
+  margin: 0 1.5%;
+  padding: 30px 30px;
+}
+.card_image {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.card_image img {
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  width: 70%;
+  height: auto;
+}
+.card_text {
+  margin-top: 20px;
+  text-align: center;
+}
+.card_text h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+}
+.card_text h3 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 35px;
+}
+.card_text p {
+  color: white;
+  margin-top: 0;
+  line-height: 22px;
+  font-size: 15px;
+}
+.card_text a h2 {
+  color: gray;
+  margin-bottom: 10px;
+  line-height: 22px;
+  font-size: 15px;
+}
+/*====================
+Cards Esterni
+====================*/
+.esterni {
+  text-align: center;
+}
+.card_esterno {
+  float: left;
+  width: 30%;
+  margin: 0 1.5%;
+  padding: 30px 30px;
+}
+.card_image_esterno {
+  width: 100%;
+  height: auto;
+}
+.card_image_esterno img {
+  width: 100%;
+  height: auto;
+}
+.card_text_esterno {
+  text-align: center;
+  justify-content: center;
+}
+.card_text_esterno h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 25px;
+}
+.card_text_esterno p {
+  color: gray;
+  margin-top: 0;
+  line-height: 22px;
+  font-size: 18px;
+}
+/*====================
+Members
+====================*/
+.members {
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.member {
+  padding-top: 50px;
+  display: flex;
+  height: 100vh;
+  width: auto;
+  align-items: center;
+}
+.member_img {
+  width: 40%;
+  height: 90%;
+}
+.member_img img {
+  object-fit: cover;
+  width: auto;
+  height: 100%;
+}
+.member_content {
+  width: 60%;
+  padding: 50px;
+}
+.member_content p {
+  line-height: 40px;
+  font-size: 20px;
+}
+.member_content h3 {
+  text-transform: uppercase;
+}
+.member_content h2 {
+  color: gray;
+  margin-top: 10px;
+}
+@media screen and (max-width: 1200px) {
+  /*====================
+  Members
+  ====================*/
+  .members {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .member {
+    flex-wrap: wrap;
+    height: auto;
+    margin-top: 100px;
+  }
+  .member_content,
+  .member_img {
+    width: 100%;
+  }
+  .member_img img {
+    width: 100%;
+    height: auto;
+  }
+}
+/*====================
+Smartphone
+====================*/
+@media screen and (max-width: 767px) {
+  /*====================
+  Cards
+  ====================*/
+  .cards {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .card {
+    width: 100%;
+    margin: 0;
+  }
+  .card_text h1 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 0;
+  }
+  .card_text p {
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  .card_image img {
+    width: 30%;
+  }
+  .card_image {
+    margin-top: 0;
+  }
+  /*====================
+  Cards Esterni
+  ====================*/
+  .esterni {
+    text-align: center;
+  }
+  .card_esterno {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  .card_image_esterno {
+    width: 100%;
+    height: auto;
+  }
+  .card_image_esterno img {
+    width: 100%;
+    height: auto;
+  }
+  .card_text_esterno {
+    text-align: center;
+    justify-content: center;
+  }
+  .card_text_esterno h1 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  .card_text_esterno p {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+}
